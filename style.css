@@ -96,7 +96,7 @@ a:active {
 }
 
 img {
-    width: 100%; /* Adjust this percentage to resize the image */
+    max-width: 100%; /* Adjust this percentage to resize the image */
     height: auto; /* Maintains the aspect ratio of the image */
     display: block; /* Makes the image a block element */
     margin: 0 auto; /* Centers the image horizontally */

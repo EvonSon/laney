@@ -1,5 +1,5 @@
-
-    p{
+/* General Styles */
+p {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -9,7 +9,7 @@
     text-decoration: none;
 }
 
-a{
+a {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -32,7 +32,6 @@ h1,h2,h3 {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
 
-    
     /* Flexbox for centering text vertically and horizontally */
     display: flex;
     justify-content: center;  /* Horizontally center */
@@ -42,7 +41,7 @@ h1,h2,h3 {
 }
 
 a {
-    color: black !important; 
+    color: black !important;
     text-decoration: none !important;
 }
 
@@ -70,14 +69,12 @@ a:active {
     font-size: 70px;
 }
 
-
 /* Prevent scrolling for the body with the class 'no-scrollbar' */
 .no-scrollbar {
     overflow: hidden;
-    margin: 0;  
-    padding: 240px; 
+    margin: 0;
+    padding: 240px;
 }
-
 
 /* Hover effect only enabled for the body with the class hover-effect-enabled */
 .hover-effect-enabled h1, .hover-effect-enabled h2, .hover-effect-enabled h3 {
@@ -95,4 +92,43 @@ a:active {
     /* No transition or hover effect for this page */
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Adjust body padding for smaller screens */
+    body {
+        padding: 10px;
+    }
+
+    /* Adjust heading font size */
+    h1, h2, h3 {
+        font-size: 30px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    /* Adjust link font size and layout */
+    a {
+        font-size: 12px;
+        height: auto;  /* Remove fixed height */
+        padding: 20px 0;  /* Add some padding for easier tapping */
+        margin-bottom: 10px;  /* Space between links */
+    }
+
+    /* Ensure images scale appropriately */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust paragraph font size for mobile */
+    p {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    /* Prevent overflowing content */
+    .no-scrollbar {
+        padding: 40px;  /* Reduce padding for mobile */
+    }
+}
 
